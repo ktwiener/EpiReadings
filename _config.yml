@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Readings in Epidemiology
+title: Catie Wiener
 
 # Your name to show in the footer
 author: Catie Wiener
@@ -24,7 +24,6 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
