@@ -1,16 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: To be continued
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am a first year Epidemiology PhD student at the University of North Carolina at Chapel Hill. My background is in biostatistics, both as a SAS programmer in clinical trials and as a statistician in observational studies using claims and EH data. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My husband is finishing up his PhD this semester, and as I started my program one of his pieces of advice was to start a blog early to summarize papers I read that I can reference back to. So this is that. 
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
