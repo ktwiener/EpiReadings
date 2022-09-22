@@ -1,17 +1,33 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Confounding control with 5 methods
+subtitle: Exploring differences in ATE and ATT estimators. 
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [books, test]
+tags: [causal inference, propensity scores]
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+### Kerth et al. (2006) Results of Multivariable Logistic Regression, Propensity Matching, Propensity Adjustment, and Propensity-based Weighting under Conditions of Nonuniform Effect
+This paper was recommended reading by Steve Cole to investigate results of different confounding control in a non-uniform (heterogeneous) population. The goal was to estimate the effect of plasminogen activator (t-PA) on death among 6,000 ischemic stroke patients in a German stroke registry. 
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+The authors investigating the results of using 5 different confounding control methods. Of particular interest were the different propensity score methods. The paper addressed the results from using (1) propensity score matching, (2) propensity score weighting with standardized-mortality-ratio (SMR) weights, and (3) propensity score weighting with inverse-probability-of-treatment (IPT) weights. My understanding is that 4 of the 5 methods found similar weighted odds ratio close to 1, whereas the IPTW odds ratio was nearly 11. 
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+Quick propensity score definition: the probability an individual would have been treated based on that individual's pre-treatment values. Adjustments balance the observed covariates used to construct score. IPT weights are constructed as 1/p, where p is the predicted probability of treatment given a set of observed voariates, and SMR weights are calculated as 1 for the treated and p/(1-p) for the untreated. 
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+This study fit a logistic regression model to estimate the propensity scores with the following pre-treatment variables: age, gender, Rankin scale, time from event to hospital admission, paresis, state of consciousness, type of admitting ward, transportation to hospital, aphasia, hypertension, and a bunch of other things. The associations of age, time from symptoms to admission, and Rankin scale changed the last 3 6-month periods, so a time-covariate interaction was included into the model for those three covariates. I did not see time period as a covariate in the model at all, which might also be interesting in how they treat patients probably changes over time. 
+
+The study included 6,269 ischemic stroke patients registered in a stroke registry between 2000 and 2001. 212 patients received treatment and 6,057 did not. 
+The gradient of the outcome (death) across levels of the propensity score for the treated and untreated groups were very different. No treated individuals were below the 10th percentile of propensity scores. Interestingly, among those not treated, mortality increased with increased propensity score, but among those treated, mortality decreased with increased propensity score. This indicates nonuniform effect. 
+
+203 patients were able to be matched with controls with a precision of 0.05 around the propensity score. This estimates the average treatment effect on the treated (ATT), because the population is being restricted to the characteristics of the treated group.This yielded an odds ratio of 1.17 (95% CI: 0.68, 2) from the 406 patient sample size. SMR weights similarly estimated the ATT, since the untreated patients are weighted to resemble the patients in the treated population. The SMR yields an odds ratio of 1.11 (95% CI: 0.67, 1.84). Honestly, I find it interesting that the confidence interval is not more precise by a bigger scale than it is, since the sample size is so much larger. 
+
+To attempt to put in terms for my brain, we are looking at treatment effect for the patients with characteristics that match those who were treated. 
+
+Conversely, the IPT weighted odds ratio was 10.77 (95% CI: 2.47, 47.04). This estimates the average treatment effect (ATE) -- the treatment effect had the entire population been treated. This estimate takes into account those patients with super small propensity scores who did not have counterparts in the treated group. 
+
+Anyways, there are no patients with propensity scores lower than the 10th percentile in the treated group. I am a newbie at this, but am thinking this violates the positivity identification condition. Positivity asserts that people at every level of covariates L has the chance to be in each treatment group. In this case, it is clear that when trying to estimate the ATE that condition is not met. 
+
+However, the ATT only is estimating treatment effect in the population that was treated. So we need the population to look like the treated population. In that case, we will be postulating that we can relax the positivity condition to allow for some type of partial positivity. That is, the positivity need only exist for the patients in the treated population. 
+
+I will come back to sharpen this later. There is more reading to do!
