@@ -41,9 +41,6 @@
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
   {% endif %}
-  
-  {%- assign author = site.authors | where: "name": page.author | first -%}
-<p>By <a href="/authors/{{ author.slug }}/">{{ author.name }}</a></p>
 
   <meta name="description" content="{{ description }}">
 
