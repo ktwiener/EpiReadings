@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Table 2 fallacy
-author: Catie Wiener
+author: [Catie Wiener]
 tags: [causal inference, westreich]
 ---
 
