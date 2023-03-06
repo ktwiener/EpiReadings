@@ -20,7 +20,9 @@ author: 2022 UNC Epi Cohort
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
+  Schedule: "schedule"
+  Readings: "readings"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
