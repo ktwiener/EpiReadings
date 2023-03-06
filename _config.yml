@@ -253,7 +253,17 @@ kramdown:
   input: GFM
 
 # Default YAML values (more information on Jekyll's site)
+collections:
+  authors:
+    output: true
+
 defaults:
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /authors/:slug
   -
     scope:
       path: ""
