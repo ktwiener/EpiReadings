@@ -94,7 +94,7 @@ share-links-active:
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
@@ -125,11 +125,11 @@ navbar-border-col: "#13294B"
 page-col: "#FFFFFF"
 text-col: "#151515"
 link-col: "#007FAE"
-hover-col: "#74A089"
+hover-col: "#C4D600"
 footer-col: "#4B9CD3"
 footer-text-col: "#FFFFFF"
 footer-link-col: "#404040"
-footer-hover-col: "#74A089"
+footer-hover-col: "#C4D600"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
