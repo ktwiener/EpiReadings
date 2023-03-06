@@ -5,7 +5,6 @@ author: Catie Wiener
 tags: [causal inference, westreich, confounders]
 ---
 
-### Westreich and Greenland (2012) The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients
 _Westreich D, Greenland S. The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients. American Journal of Epidemiology 2013;177(4):292–8._
 
 #### Motivation
