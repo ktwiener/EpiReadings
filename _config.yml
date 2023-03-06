@@ -249,21 +249,18 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+# Default YAML values (more information on Jekyll's site)
 collections:
   authors:
     output: true
-    defaults:
-      - scope:
-          path: ""
-          type: authors
-        values:
-          layout: author
-          permalink: /authors/:slug
-          
-kramdown:
-  input: GFM
 
-# Default YAML values (more information on Jekyll's site)
+defaults:
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /authors/:slug
   -
     scope:
       path: ""
