@@ -249,10 +249,6 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
-kramdown:
-  input: GFM
-
-# Default YAML values (more information on Jekyll's site)
 collections:
   authors:
     output: true
@@ -263,6 +259,11 @@ collections:
         values:
           layout: author
           permalink: /authors/:slug
+          
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
   -
     scope:
       path: ""
