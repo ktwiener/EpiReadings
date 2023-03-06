@@ -1,0 +1,13 @@
+---
+layout: page
+title: 'Contributors'
+---
+
+{% for author in site.authors %}
+  <h2>
+    <a href="{{ author.url }}">
+      {{ author.name }}
+    </a>
+  </h2>
+  <p>{{ author.content | markdownify }}</p>
+{% endfor %}
