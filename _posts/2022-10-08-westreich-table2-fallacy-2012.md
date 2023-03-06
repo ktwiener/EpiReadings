@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Table 2 fallacy
-date:  2022-10-08
 author: Catie Wiener
 tags: [causal inference, westreich, confounders]
 ---
