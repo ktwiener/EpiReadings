@@ -3,6 +3,7 @@ layout: post
 title: The Table 2 fallacy
 date:  2022-10-08
 author: Catie Wiener
+tags: [causal inference, westreich, confounders]
 ---
 
 ### Westreich and Greenland (2012) The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients
