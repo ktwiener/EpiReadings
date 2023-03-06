@@ -1,12 +1,12 @@
 ---
 layout: post
 title: The Table 2 fallacy
-subtitle: Misunderstandings when multiple effect estimates are presented in a table 2
 author: Catie Wiener
 tags: [causal inference, westreich]
 ---
 
 ### Westreich and Greenland (2012) The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients
+_Westreich D, Greenland S. The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients. American Journal of Epidemiology 2013;177(4):292–8._
 
 #### Motivation
 
