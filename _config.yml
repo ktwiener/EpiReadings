@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: Catie Wiener
+title: The 2022 UNC Epidemiology Cohort Presents: Methods Reading in Epidemiology
 
 # Your name to show in the footer
-author: Catie Wiener
+author: 2022 UNC Epi Cohort
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -48,12 +48,12 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "catiewien@gmail.com"
-  github: ktwiener
-  twitter: ktwiener
+#  email: "catiewien@gmail.com"
+#  github: ktwiener
+#  twitter: ktwiener
 #  medium: yourname
 #  reddit: yourname
-  linkedin: catiewiener
+#  linkedin: catiewiener
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
