@@ -44,7 +44,7 @@ layout: base
       </article>
       
       {%- assign author = site.authors | where: "name": page.author | first -%}
-      <p>By <a href="EpiReadings/authors/{{ author.slug }}/">{{ author.name }}</a></p>
+      <p>By <a href="/authors/{{ author.slug }}/">{{ author.name }}</a></p>
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
