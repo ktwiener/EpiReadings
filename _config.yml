@@ -20,7 +20,7 @@ author: 2022 UNC Epi Cohort
 ###############################################
 
 navbar-links:
-  About: "aboutme"
+  About: "about"
   Schedule: "schedule"
   Readings: "readings"
   Resources:
