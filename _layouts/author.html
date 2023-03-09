@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<h2>Profile page for {{ page.name }}</h2>
+<h3>{{ page.name }}</h3>
 <p>{{ page.bio }}</p>
 
-<h3>Post by this author</h3>
+<h4>Contributed posts</h4>
 {%- assign author_posts = site.posts
   | where: "author", page.name
 -%}
