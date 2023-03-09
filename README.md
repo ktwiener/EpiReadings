@@ -1,7 +1,9 @@
 # Overview
 
-Website link is:
+This is the GitHub repository that contains the papers 
 
-To add blog post, go to \_posts folder and add your markdown (easiest probably to just duplicate one of the existing -- or I'll make a template. 
+Website link is [here](https://ktwiener.github.io/EpiReadings/)
 
-To add pictures, go _here_
+Blog post template is [here](https://github.com/ktwiener/EpiReadings/blob/master/_posts/template.md)
+
+
