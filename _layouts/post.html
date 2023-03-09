@@ -45,7 +45,7 @@ layout: base
       
       {% if page.author.size > 0 %}
         {%- assign author = site.authors | where: "name": page.author | first -%}
-        <p> <a href= "{{ '/authors' | relative_url }}">
+        <p> <a href= "{{ '/authors/{{ author }}' | relative_url }}">
       {% endif %}
 
       {% if page.tags.size > 0 %}
