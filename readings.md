@@ -3,6 +3,11 @@ layout: page
 title: Readings
 ---
 
+{%- for post in site.posts -%}
+<a href="/EpiReadings/{{ post.url }}">{{ post.title }}</a>
+<br>
+{%- endfor -%}
+
 1. Kurth T, Walker AM, Glynn RJ, et al. Results of multivariable logistic regression, propensity matching, propensity adjustment, and propensity-based weighting under conditions of nonuniform effect. Am J Epidemiol 2006;163(3):262–70.
 2. Sarvet AL, Wanis KN, Stensrud MJ, Hernán MA. A Graphical Description of Partial Exchangeability. Epidemiology 2020;31(3):365–8.
 3. Sato T, Matsuyama Y. Marginal structural models as a tool for standardization. Epidemiology 2003;14(6):680–6.
