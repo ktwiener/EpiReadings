@@ -23,6 +23,7 @@ navbar-links:
   About: "about"
   Schedule: "schedule"
   Readings: "readings"
+  Contributors: "contributors"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
