@@ -4,6 +4,7 @@ title: Positivity in practice
 author: Catie Wiener
 tags: [causal identification, westreich, cole]
 ---
+_[Catie Wiener](https://ktwiener.github.io/EpiReadings/authors/catie-wiener)_
 
 _Westreich D, Cole SR. Invited Commentary: Positivity in Practice. Am J Epidemiol 2010;171(6):674–7._
 
