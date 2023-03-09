@@ -12,7 +12,7 @@ Positivity is a "necessary assumption for causal inference in observational data
 
 The authors state this formally as:
 
-$$Pr(X=x|\bf{Z}) > 0 \text{ where }f(\bf{Z}) > 0$$
+$$Pr(X=x|\bf{Z}) > 0 \text{ where }f(\bf{Z}\bf) > 0$$
 
 Plain english for my brain (maybe): This means that if a set of covariates **Z** has a probability greater than 0 in the target population, the probability of exposure x must be  greater than 0 for that particular set of covariates. 
 
