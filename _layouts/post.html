@@ -43,8 +43,10 @@ layout: base
         {{ content }}
       </article>
       
-      {%- assign author = site.authors | where: "name": page.author | first -%}
-      <p>By <a href= "{{ '/authors/{{ author.slug }}' | relative_url }}#{{- author.name -}}">{{- tag -}}
+      {% if page.author.size > 0 %}
+        {%- assign author = site.authors | where: "name": page.author | first -%}
+        <p> <a href= "{{ '/authors' | relative_url }}">{{- tag -}}
+      {% endif %}
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
