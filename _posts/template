@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is my practice post
+title: Template post
 author: Firstname Lastname
 tags: [authors of interest, my name, topics]
 ---
@@ -17,6 +17,7 @@ Here's a nice picture
   <img src="/assets/img/sipping_tea.jpg">
 </div>
 
+If you want to use a picture, put it in the assets folder in the repository (location above) then use the above to put it in blog post. 
 
 ## Header 2
 
