@@ -4,11 +4,15 @@ title: Schedule
 subtitle: Upcoming schedule of readings
 ---
 
+<center>
   
 | Date       | Reading     |
 | ---------- | ----------- |
 | 2023-03-06 | [Invited commentary: Positivity in Practice](https://pubmed.ncbi.nlm.nih.gov/20139125/)|
 | 2023-03-20 | [Illustrating bias due to conditioning on a collider](https://pubmed.ncbi.nlm.nih.gov/19926667/) |
+
+  
+</center>
 
 Potential future readings:
 1. Cole SR, Hernán MA. Constructing Inverse Probability Weights for Marginal Structural Models. American Journal of Epidemiology 2008;168(6):656–64. 
