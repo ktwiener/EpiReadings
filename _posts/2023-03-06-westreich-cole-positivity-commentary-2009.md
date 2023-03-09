@@ -42,3 +42,10 @@ Both positivity violations can be addressed through restriction. For determinist
 ## More complicated topics
 
 Time-varying non-positivity! g-estimation of a structural nested model (?) or g-computation (?) could be a way forward. 
+
+## What we talked about
+
+* Interpolation (pockets of non-positivity)
+* The target population (how restriction will change our inference population)
+    * Extended that to concepts in pharmacoepi, i.e. trimming, SMR weights
+* Also some discussion about standardization vs. IPTW. Maybe need to look at a paper that discusses that more at length? 
