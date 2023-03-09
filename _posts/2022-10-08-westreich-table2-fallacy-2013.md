@@ -2,7 +2,7 @@
 layout: post
 title: The Table 2 fallacy
 author: Catie Wiener
-tags: [causal inference, westreich, confounders, catie wiener]
+tags: [causal inference, westreich, confounders]
 ---
 
 _Westreich D, Greenland S. The Table 2 Fallacy: Presenting and Interpreting Confounder and Modifier Coefficients. American Journal of Epidemiology 2013;177(4):292–8._
